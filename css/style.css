@@ -1,0 +1,197 @@
+body{
+    height: 6000px;
+}
+/* Start Nav */
+.navbar{
+    font-size: 22px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+/* End Nav */
+
+/* Start Carousel */
+.carousel-caption,
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-color: #0000009a;
+}
+/* End Carousel */
+
+.image{
+    height: 300px !important;
+    background-image: url('../images/Damascus.jfif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Start Cards */
+.cards .card{
+    position: relative;
+}
+.cards .card::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #0000009a;
+    transition: 1s;
+}
+.cards .card:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+.cards .card::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #0000009a;
+    transition: 1s;
+}
+.cards .card:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+/* End Cards */
+
+/* Start City */
+.city .card-header{
+    background-color: #212529;
+    border-bottom: 2px solid white;
+}
+.city .collapse{
+    background-color: #0C263D;
+}
+/* End City */
+
+/* Start News */
+/* .news .card{
+    max-width: 90% !important;
+    margin: auto;
+} */
+.news .news-body{
+    transform: skewX(-15deg);
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    right: -50px;
+}
+.news .news-body-reverse{
+    transform: skewX(15deg);
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    right: 50px;
+}
+
+.news span{
+    position: relative;
+    padding-bottom: 3px;
+}
+.news span::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    height: 3px;
+    background-color: #0C263D;
+
+}
+.news .card span::before{
+    transition: 0.5s;
+}
+.news .card:hover span::before{
+    width: 50%;
+}
+
+.news .card img{
+    transition: 0.5s;
+}
+.news .card:hover img{
+    transform: scale(1.2);
+}
+@media (max-width: 767.98px){
+    .news .news-body,
+    .news .news-body-reverse{
+        transform: none;
+        right: 0;
+    }
+    .carousel-inner{
+        height: 400px !important;
+    }
+}
+/* End News */
+
+/* Start Images */
+.images .card{
+    transition: 0.5s;
+}
+.images .card:hover{
+    transform: scale(0.8);
+}
+.images .card-image{
+    position: relative;
+}
+.images .card-image img{
+    height: 350px;
+}
+.images .card-image::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #0000009a;
+}
+.images .card-body{
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+.second-image{
+    width: 100px  !important;
+    height: 100px !important;
+}
+/* End Images */
+
+/* Start join */
+.join .icon{
+    background-color: #0C263D;
+    box-shadow: 0px 0px 41px 6px cornflowerblue !important;
+}
+/* End join */
+
+/* Start Footer */
+footer{
+    background-color: #212529;
+}
+footer hr{
+    border:none;
+    width: 50%;
+    height: 1px;
+    background-color: gray;
+}
+/* End Footer */
+
+/* Start ICons */
+.icons{
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    gap: 20px;
+}
+.icons i{
+    background-color: #024a89;
+    border-radius: 10px;
+}
+/* End ICons */
